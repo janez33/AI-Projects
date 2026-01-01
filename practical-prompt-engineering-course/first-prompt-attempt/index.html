@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Prompt Library</h1>
+            <p class="subtitle">Save and organize your AI prompts</p>
+        </header>
+
+        <div class="add-prompt-section">
+            <h2>Add New Prompt</h2>
+            <form id="promptForm">
+                <div class="form-group">
+                    <label for="promptTitle">Title</label>
+                    <input 
+                        type="text" 
+                        id="promptTitle" 
+                        placeholder="Enter a descriptive title..." 
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="promptContent">Prompt Content</label>
+                    <textarea 
+                        id="promptContent" 
+                        rows="6" 
+                        placeholder="Enter your prompt here..." 
+                        required
+                    ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <span>💾</span> Save Prompt
+                </button>
+            </form>
+        </div>
+
+        <div class="prompts-section">
+            <div class="prompts-header">
+                <h2>Saved Prompts</h2>
+                <span id="promptCount" class="prompt-count">0 prompts</span>
+            </div>
+            <div id="promptsList" class="prompts-list">
+                <p class="empty-state">No prompts saved yet. Add your first prompt above!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

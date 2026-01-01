@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt Library</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Prompt Library</h1>
+        <p class="subtitle">Save and manage your AI prompts</p>
+      </header>
+
+      <div class="form-container">
+        <form id="promptForm">
+          <div class="form-group">
+            <label for="promptTitle">Prompt Title</label>
+            <input
+              type="text"
+              id="promptTitle"
+              placeholder="Enter prompt title..."
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="promptModel">AI Model</label>
+            <input
+              type="text"
+              id="promptModel"
+              placeholder="e.g., GPT-4, Claude 3, Gemini Pro..."
+              required
+              maxlength="100"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="promptContent">Prompt Content</label>
+            <textarea
+              id="promptContent"
+              rows="5"
+              placeholder="Enter your prompt content..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="isCodePrompt" />
+              <span>This is a code-related prompt</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn-save">Save Prompt</button>
+        </form>
+      </div>
+
+      <div class="prompts-section">
+        <div class="section-header">
+          <h2>Saved Prompts</h2>
+          <div class="export-import-buttons">
+            <button
+              class="btn-export"
+              onclick="exportPrompts()"
+              title="Export all prompts to JSON"
+            >
+              📤 Export
+            </button>
+            <label class="btn-import" title="Import prompts from JSON">
+              📥 Import
+              <input
+                type="file"
+                id="importFile"
+                accept=".json"
+                onchange="handleImportFile(event)"
+                style="display: none"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">
+            All Prompts
+          </button>
+          <button class="filter-tab" data-filter="favorites">Favorites</button>
+          <button class="filter-tab" data-filter="toprated">Top Rated</button>
+        </div>
+        <div id="promptsContainer" class="prompts-container">
+          <!-- Prompt cards will be inserted here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

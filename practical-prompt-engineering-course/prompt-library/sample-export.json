@@ -1,0 +1,87 @@
+{
+  "version": "1.0",
+  "exportedAt": "2025-12-29T10:30:00.000Z",
+  "statistics": {
+    "totalPrompts": 3,
+    "averageRating": 4.33,
+    "mostUsedModel": "GPT-4",
+    "totalNotes": 2,
+    "favoritesCount": 2,
+    "totalTokensEstimate": {
+      "min": 2437,
+      "max": 3656
+    }
+  },
+  "prompts": [
+    {
+      "id": 1735468200001,
+      "title": "Code Review Assistant",
+      "content": "Act as an expert code reviewer. Review the following code for:\n1. Best practices and design patterns\n2. Potential bugs or edge cases\n3. Performance optimizations\n4. Security vulnerabilities\n5. Code readability and maintainability\n\nProvide specific, actionable feedback with examples.",
+      "createdAt": "2025-12-29T10:30:00.000Z",
+      "rating": 5,
+      "isFavorite": true,
+      "notes": [
+        {
+          "id": 1735468220001,
+          "content": "Works excellently for JavaScript and Python. Very thorough reviews.",
+          "createdAt": "2025-12-29T10:30:20.000Z"
+        }
+      ],
+      "metadata": {
+        "model": "GPT-4",
+        "createdAt": "2025-12-29T10:30:00.000Z",
+        "updatedAt": "2025-12-29T10:30:00.000Z",
+        "tokenEstimate": {
+          "min": 975,
+          "max": 1462,
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": 1735468200002,
+      "title": "API Documentation Generator",
+      "content": "Generate comprehensive API documentation for the following endpoint. Include:\n- Endpoint URL and HTTP method\n- Request parameters (path, query, body)\n- Response format with examples\n- Error codes and their meanings\n- Authentication requirements\n- Rate limiting information\n- Code examples in multiple languages",
+      "createdAt": "2025-12-29T10:31:00.000Z",
+      "rating": 4,
+      "isFavorite": true,
+      "notes": [],
+      "metadata": {
+        "model": "GPT-4",
+        "createdAt": "2025-12-29T10:31:00.000Z",
+        "updatedAt": "2025-12-29T10:31:00.000Z",
+        "tokenEstimate": {
+          "min": 812,
+          "max": 1218,
+          "confidence": "high"
+        }
+      }
+    },
+    {
+      "id": 1735468200003,
+      "title": "SQL Query Optimizer",
+      "content": "Analyze and optimize the following SQL query:\n\n[Your SQL query here]\n\nProvide:\n1. Performance analysis of the current query\n2. Optimized version with explanations\n3. Index recommendations\n4. Estimated performance improvement\n5. Best practices for similar queries",
+      "createdAt": "2025-12-29T10:32:00.000Z",
+      "rating": 4,
+      "isFavorite": false,
+      "notes": [
+        {
+          "id": 1735468240001,
+          "content": "Great for PostgreSQL and MySQL optimization tips.",
+          "createdAt": "2025-12-29T10:32:20.000Z"
+        }
+      ],
+      "metadata": {
+        "model": "Claude 3",
+        "createdAt": "2025-12-29T10:32:00.000Z",
+        "updatedAt": "2025-12-29T10:32:00.000Z",
+        "tokenEstimate": {
+          "min": 650,
+          "max": 975,
+          "confidence": "high"
+        }
+      }
+    }
+  ]
+}
+
