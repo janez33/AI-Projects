@@ -216,3 +216,4 @@ To test the system:
 - All data stored in browser's localStorage
 - Migration happens automatically on page load
 
+
